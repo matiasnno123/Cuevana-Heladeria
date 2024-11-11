@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e0f7fa; /* Fondo suave */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            position: relative;
+            max-width: 400px;
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 200;
+        }
+        .image-container {
+            position: relative;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #000;
+            width: 90%;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 200;
+        }
+        .home-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            text-decoration: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .home-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="/Imagenes/Helado.jpg" alt="Imagen de helado">
+            <div class="text-overlay">
+                "Bienvenidos a Cuevana, donde cada sabor cuenta una historia. Nos especializamos en crear helados artesanales con ingredientes frescos y naturales, sin aditivos ni conservantes. Desde los clásicos favoritos hasta combinaciones innovadoras, nuestro menú ofrece una experiencia única para cada paladar. Disfruta de un helado hecho con dedicación y pasión, perfecto para cualquier ocasión. Ya sea que te guste el helado en cono, vaso, o en su versión para llevar, ¡te invitamos a descubrir una explosión de sabores que no encontrarás en ningún otro lugar!"
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Home -->
+    <a href="/index.html" class="home-button" title="Home">Home</a>
+
+</body>
+</html>
