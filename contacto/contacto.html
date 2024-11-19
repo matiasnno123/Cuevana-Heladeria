@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">    
+    <style>  
+            .h1 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 600;
+            font-size: 48px;
+            color: #d884a5;
+        }
+        .h2 {
+            font-family: 'Yellowtail', cursive;
+            font-weight: 400;
+            font-size: 48px;
+        }
+        .p {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 200;
+            font-size: 48px;
+            color: #d884a5;
+        }
+        body {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  margin: 0;
+  height: 100vh; 
+ background-color: #e0f7fa;
+}
+  
+      .container {
+          background-color: #a8e0ff;
+          padding: 20px;
+          border-radius: 10px;
+          width: 300px;
+          text-align: center;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+  
+      .container h1 {
+          font-size: 24px;
+          margin-bottom: 15px;
+          color: #333;
+      }
+  
+      form {
+          display: flex;
+          flex-direction: column;
+      }
+  
+      label {
+          font-size: 14px;
+          margin-bottom: 5px;
+          text-align: left;
+          color: #555;
+      }
+  
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      textarea {
+          padding: 8px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+      }
+  
+      textarea {
+          resize: none;
+      }
+  
+      button[type="submit"] {
+          padding: 10px;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 14px;
+      }
+  
+      button[type="submit"]:hover {
+          background-color: #555;
+      }
+      footer {
+      background-color: #000000;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      font-family: 'Oswald', sans-serif;
+  }
+footer .social-icons a {
+      color: #f1f1f1;
+      font-size: 40px;
+      margin: 0 20px;
+      transition: transform 0.3s, color 0.3s;
+  }
+footer .social-icons a:hover {
+      transform: scale(1.2);
+      color: #48044b;
+  }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/logo.png" alt="Logo" width="21%" height="21%">
+            </a>
+            <h1 class="h1 text-center">Cuevana</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nosotros/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/productos/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/carrito/carrito.html"> <img src="/iconos/anadir-a-la-cesta.png" alt="Carrito" width="25" height="25"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>CONTACTANOS</h1>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p class="footer text-align">© 2024 Cuevana. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
