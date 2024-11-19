@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        body {
+        body{
             background-color: #e0f7fa;
         }
         .h1 {
@@ -35,6 +36,7 @@
             color: white;
             padding: 30px 0;
             text-align: center;
+            font-family: 'Oswald', sans-serif;
         }
         footer .social-icons a {
             color: #f1f1f1;
@@ -46,22 +48,29 @@
             transform: scale(1.2);
             color: #48044b;
         }
+        .carousel {
+            max-width: 400px;
+            max-height: 600px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+            }
 
-        .image-gallery {
+        .carousel img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: auto; 
+            }
+
+        .carousel-container {
             display: flex;
             justify-content: center;
-            gap: 10px;
-        }
+            align-items: center;
+            min-height: 80vh; 
+            }
 
-        .image-gallery img {
-            width: 200px;
-            height: auto;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .image-gallery img:hover {
-            transform: scale(1.2);
-        }
     </style>
 </head>
 <body>
@@ -92,12 +101,28 @@
             </div>
         </div>
     </nav>
-    <section class="image-gallery">
-        <img src="Imagenes/Imagen 1.png" alt="Imagen 1">
-        <img src="Imagenes/Imagen 2.png" alt="Imagen 2">
-        <img src="Imagenes/Imagen 3.png" alt="Imagen 3">
-        <img src="Imagenes/Imagen 4.png" alt="Imagen 4">
-    </section>
+    <h2 class="h2 text-center" style="color: #156c9e;">Productos de Calidad</h2>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="Imagenes/Imagen 1.png" class="d-block w-100" alt="Helado1">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="Imagenes/Imagen 4.png" class="d-block w-100" alt="Helado2">
+          </div>
+          <div class="carousel-item">
+            <img src="Imagenes/Imagen 3.png" class="d-block w-100" alt="Helado3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     <section class="content my-5">
         <div class="container">
             <div class="row align-items-center mb-4">
@@ -123,18 +148,18 @@
 
     <footer>
         <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="#" target="_blank">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com" target="_blank">
+            <a href="#" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://wa.me/" target="_blank">
+            <a href="#" target="_blank">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
-        <p>© 2024 Cuevana. Todos los derechos reservados.</p>
+        <p class="footer text-align">© 2024 Cuevana. Todos los derechos reservados.</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html

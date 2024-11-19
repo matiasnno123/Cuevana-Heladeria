@@ -4,77 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
+    <link rel="stylesheet" href="estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #e0f7fa; /* Fondo suave */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .container {
-            position: relative;
-            max-width: 400px;
-            text-align: center;
-            font-family: 'Oswald', sans-serif;
-            font-weight: 200;
-        }
-        .image-container {
-            position: relative;
-        }
-        .image-container img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .text-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #000;
-            width: 90%;
-            padding: 10px;
-            text-align: center;
-            font-size: 16px;
-            font-weight: 200;
-        }
-        .home-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            text-decoration: none;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-        }
-        .home-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<style>
+    body{
+        background-color: #e0f7fa;
+    }
+.h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #d884a5;
+  }
+  .h2 {
+    font-family: 'Yellowtail', cursive;
+    font-weight: 400;
+    font-size: 48px;
+  }
+  .p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 48px;
+    color: #d884a5;}</style>
 </head>
 <body>
-    <div class="container">
-        <div class="image-container">
-            <img src="/Imagenes/Helado.jpg" alt="Imagen de helado">
-            <div class="text-overlay">
-                "Bienvenidos a Cuevana, donde cada sabor cuenta una historia. Nos especializamos en crear helados artesanales con ingredientes frescos y naturales, sin aditivos ni conservantes. Desde los clásicos favoritos hasta combinaciones innovadoras, nuestro menú ofrece una experiencia única para cada paladar. Disfruta de un helado hecho con dedicación y pasión, perfecto para cualquier ocasión. Ya sea que te guste el helado en cono, vaso, o en su versión para llevar, ¡te invitamos a descubrir una explosión de sabores que no encontrarás en ningún otro lugar!"
-            </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+            <img src="/Logo.png" alt="Logo" width="21%" height="21%">
+        </a>
+        <h1 class="h1 text-center">Cuevana</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/Contacto/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Nosotros/Nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Productos/Productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Carrito/Carrito.html"><img src="/Iconos/anadir-a-la-cesta.png" alt="Carrito" width="25" height="25"></a>
+                </li>
+            </ul>
         </div>
     </div>
-
-    <!-- Botón Home -->
-    <a href="/index.html" class="home-button" title="Home">Home</a>
-
+</nav>
+    <div class="container">
+        <div class="card">
+          <img src="/Imagenes/Helado.jpg" alt="Helado" class="card-img">
+          <div class="card-content">
+            <h1 class="card-title">Bienvenidos a Cuevana Helados</h1>
+            <p class="card-text">"Bienvenidos a Cuevana Helados, donde cada sabor cuenta una historia. Nos especializamos en crear helados artesanales con ingredientes frescos y naturales, sin aditivos ni conservantes. Desde los clásicos favoritos hasta combinaciones innovadoras, nuestro menú ofrece una experiencia única para cada paladar. Ya sea que te guste el helado en cono, vaso o para llevar, te invitamos a descubrir una explosión de sabores."</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p class="footer text-align">© 2024 Cuevana. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
