@@ -86,28 +86,54 @@ footer .social-icons a:hover {
       transform: scale(1.2);
       color: #48044b;
   }
-  nav.navbar {
-                background: linear-gradient(90deg, #E5BFFC, #3498db); /* Cambia #3498db si necesitas otro color */
-                padding: 10px;
+  .nav-item a:hover{
+    background-color: #555555;
 }
-nav .nav-link {
-    color: #a70b49 !important; /* Cambia el color de los enlaces */
+nav.navbar {
+    background-color: #F6EFE8 !important;
+    padding: 1px;
 }
 
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item {
+    text-align: center;
+    width: 200px;
+}
+
+.nav-item a {
+    display: block;
+    color: #000000 !important;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    background-color: #555555;
+    color: #fff !important; 
+    border-radius: 5px; 
+}
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="logo.png" alt="Logo" width="21%" height="21%">
+                <img src="Cuevana.png" alt="Logo" width="60%" height="60%">
             </a>
-            <h1 class="h1 text-align">Cuevana</h1>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
@@ -115,10 +141,12 @@ nav .nav-link {
                         <a class="nav-link" href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
+                        <a class="nav-link" href="promociones.html">Promociones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="carrito.html"> <img src="anadir-a-la-cesta.png" alt="Carrito" width="25" height="25"></a>
+                        <a class="nav-link" href="carrito.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
                     </li>
                 </ul>
             </div>

@@ -92,10 +92,34 @@ footer .social-icons a:hover {
   font-weight: 200;
   font-size: 48px;
   color: #d884a5;}
-  nav.navbar {
-    background: linear-gradient(90deg, #a8e0ff, #3498db); /* Cambia #3498db si necesitas otro color */
-    padding: 10px;
+  .nav-item a:hover{
+    background-color: #555555;
 }
-nav .nav-link {
-color: #a70b49 !important; /* Cambia el color de los enlaces */
+nav.navbar {
+    background-color: #F6EFE8 !important;
+    padding: 1px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item {
+    text-align: center;
+    width: 200px;
+}
+
+.nav-item a {
+    display: block;
+    color: #000000 !important;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    background-color: #555555;
+    color: #fff !important; 
+    border-radius: 5px; 
 }
