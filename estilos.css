@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  margin: 0;
+  height: 100vh; 
+}
+
+nav.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  flex: 1; 
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #00ffea;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.card-text {
+  font-size: 1em;
+  color: #666666;
+  line-height: 1.5;
+}
+footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+
+footer .social-icons a {
+  color: #f1f1f1;
+  font-size: 40px;
+  margin: 0 20px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #48044b;
+}
+.h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #d884a5;
+}
+.h2 {
+  font-family: 'Yellowtail', cursive;
+  font-weight: 400;
+  font-size: 48px;
+}
+.p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: 48px;
+  color: #d884a5;}
+  nav.navbar {
+    background: linear-gradient(90deg, #a8e0ff, #3498db); /* Cambia #3498db si necesitas otro color */
+    padding: 10px;
+}
+nav .nav-link {
+color: #a70b49 !important; /* Cambia el color de los enlaces */
+}
