@@ -44,7 +44,7 @@
           border-radius: 10px;
           width: 300px;
           text-align: left;
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 8px #000000(0, 0, 0, 0.2);
       }
   
       .container h1 {
@@ -70,8 +70,9 @@
       input[type="email"],
       textarea {
           padding: 8px;
+          width: 320px;
           margin-bottom: 15px;
-          border: 1px solid #ccc;
+          border: 1px solid #000000;
           border-radius: 5px;
           font-size: 14px;
       }
@@ -82,8 +83,8 @@
   
       button[type="submit"] {
           padding: 10px;
-          background-color: #333;
-          color: #fff;
+          background-color: #555555;
+          color: #FFFFFF;
           border: none;
           border-radius: 5px;
           cursor: pointer;
@@ -95,13 +96,13 @@
       }
       footer {
       background-color: #000000;
-      color: white;
+      color: #FFFFFF;
       padding: 30px 0;
       text-align: center;
       font-family: 'Oswald', sans-serif;
   }
 footer .social-icons a {
-      color: #f1f1f1;
+      color: #FFFFFF;
       font-size: 40px;
       margin: 0 20px;
       transition: transform 0.3s, color 0.3s;
@@ -138,7 +139,7 @@ nav.navbar {
 
 .nav-item a:hover {
     background-color: #555555;
-    color: #fff !important; 
+    color: #FFFFFF !important; 
     border-radius: 5px; 
 }
 
@@ -161,7 +162,7 @@ input[type="radio"] {
 }
 
 label {
-  color: grey;
+  color: #555555;
 }
 
 .clasificacion {
@@ -180,13 +181,13 @@ input[type="radio"]:checked ~ label {
   color: orange;
 }
 .clasificacion label {
-    font-size: 20px;
-    color: grey;
+    font-size: 40px;
+    color: #555555;
     cursor: pointer;
 }
 .clasificacion label {
-    font-size: 20px; 
-    color: grey;
+    font-size: 40px; 
+    color: #555555;
     cursor: pointer;
 }
 
@@ -198,14 +199,16 @@ input[type="radio"]:checked ~ label {
 input[type="radio"]:checked ~ label {
     color: orange;
 }
-
+        .btn-summary { 
+            font-size: 16px; 
+            padding: 10px;  }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="Cuevana.png" alt="Logo" width="60%" height="60%">
+                <img src="Cuevana.png" alt="Logo" width="40%" height="40%">
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -235,25 +238,19 @@ input[type="radio"]:checked ~ label {
         </div>
     </nav>
     <div class="d-flex justify-content-center align-items-start">
-        <section class="me-3" style="width: 40%;">
+        <section class="me-3" style="width: 40%; margin-left: 150px;">
             <h1 class="h1" style="margin-top: 20px;">Trabaja con Nosotros:</h1>
             <a href="#" class="p">Enviar CV</a>
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
             <h1 class="h1">Consejos para mejora</h1>
-            <textarea name="" id="" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;"></textarea>
+            <input type="text">
             <button type="submit">Enviar</button>
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <h1 class="h1 text-align">Calificanos nuestra atención</h1>
+            <h1 class="h1 text-align">Califica nuestra atención</h1>
             <form>
                 <p class="clasificacion">
                   <input id="radio1" type="radio" name="estrellas" value="5">
@@ -267,36 +264,56 @@ input[type="radio"]:checked ~ label {
                   <input id="radio5" type="radio" name="estrellas" value="1">
                   <label for="radio5">★</label>
                 </p>
-              </form><br>
+              </form>
               <br>
-              <button type="submit">Enviar Calificación</button>
+              <br>
+              <br>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pagar" style="background-color: #555555; border: #555555;"> Enviar Calificación </button> 
+              <div class="modal" id="pagar">
+            
+                <div class="modal-dialog">
+                <div class="modal-content">
+                
+                <div class="modal-header">
+                <h5 class="modal-title">¡Gracias por tu valoración!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                </div>
+                </div>
+                </div>
         </section>
 
-        <div class="container" style="max-width: 400px; width: 100%; background-color: #f7c9dc; padding: 45px; border-radius: 15px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); margin-top: 35px;">
+        <div class="container" style="max-width: 400px; width: 100%; background-color: #F1CBE3; padding: 45px; border-radius: 15px; box-shadow: 0px 4px 8px #000000(0, 0, 0, 0.1); margin-top: 35px;">
             <h1 class="h1 text-center">CONTACTANOS</h1>
             <form action="#" method="post" style="margin-top: 20px;">
                 <label for="nombre" style="font-size: 14px; color: #48044B;">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;">
+                <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #FFFFFF; border-radius: 8px;">
     
                 <label for="apellido" style="font-size: 14px; color: #48044B;">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;">
+                <input type="text" id="apellido" name="apellido" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #FFFFFF; border-radius: 8px;">
     
                 <label for="email" style="font-size: 14px; color: #48044B;">Correo:</label>
-                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;">
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #FFFFFF; border-radius: 8px;">
     
                 <label for="mensaje" style="font-size: 14px; color: #48044B;">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;"></textarea>
+                <textarea id="mensaje" name="mensaje" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #FFFFFF; border-radius: 8px;"></textarea>
     
-                <button type="submit" style="display: block; margin: 0 auto; padding: 10px 30px; background-color: #333; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 14px;">
+                <button type="submit" style="display: block; margin: 0 auto; padding: 10px 30px; background-color: #555555; color: #FFFFFF; border: none; border-radius: 8px; cursor: pointer; font-size: 14px;">
                     Enviar
                 </button>
             </form>
         </div>
     </div>
     <div>
+        <br>
+        <br>
+        <br>
         <h1 class="h1 text-center">Nuestras sucursales</h1>
-        <div class="row">
-            <div class="col-md-6 text-center">
+        <br>
+        <br>
+        <div class="row" style="margin-left: 280px;">
+            <div class="col-md-4 text-center">
                 <p class="p">Santa Lucía</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3401.2249376104246!2d-68.50552074063454!3d-31.517981407164985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1732135973441!5m2!1ses-419!2sar" 
                         width="100%" 
@@ -307,7 +324,7 @@ input[type="radio"]:checked ~ label {
                         referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-md-4 text-center">
                 <p class="p">Capital Concepcion</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2673.53272186993!2d-68.52396675024077!3d-31.523477690898147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1732136062408!5m2!1ses-419!2sar" 
                         width="100%" 
@@ -320,7 +337,8 @@ input[type="radio"]:checked ~ label {
             </div>
         </div>
     </div>
-    
+    <br>
+    <br>
     <footer>
         <div class="social-icons">
             <a href="#" target="_blank">
@@ -336,5 +354,13 @@ input[type="radio"]:checked ~ label {
         <p class="footer text-align">© 2024 Cuevana. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Mostrar el modal cuando se haga clic en el botón de "Enviar Calificación"
+        document.querySelector("button[type='submit']").addEventListener("click", function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe (si deseas enviar el formulario, debes modificar esto)
+            var myModal = new bootstrap.Modal(document.getElementById('thankYouModal'), {});
+            myModal.show(); // Muestra el modal
+        });
+    </script>
 </body>
 </html>

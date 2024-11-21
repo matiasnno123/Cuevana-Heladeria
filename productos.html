@@ -12,7 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 <style>
         body{
-            background-color: white;
+            background-color: #FFFFFF;
         }
         .h1 {
             font-family: 'Oswald', sans-serif;
@@ -62,8 +62,20 @@ nav.navbar {
 
 .nav-item a:hover {
     background-color: #555555;
-    color: #fff !important; 
+    color: #FFFFFF !important; 
     border-radius: 5px; 
+}
+button{
+    background-color: #555555;
+    border-radius: 15px;
+    color: #FFFFFF;
+}
+.card-img {
+    width: 100%;
+    height: calc(100px - 20px);
+    max-height: 100px;
+    object-fit: cover; 
+    border-radius: 10px; 
 }
     </style>
 </head>
@@ -71,7 +83,7 @@ nav.navbar {
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="Cuevana.png" alt="Logo" width="60%" height="60%">
+                <img src="Cuevana.png" alt="Logo" width="40%" height="40%">
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,12 +111,60 @@ nav.navbar {
                 </ul>
             </div>
         </div>
-    </nav><div>
-    <h1 class="h1 text-center">Productos destacados</h1>
-    <img src="chocolate.png" alt="chocolate">
-    <img src="Dulce_de_leche_copn_chocolate.png" alt="Dulce de leche con chocolate">
-    <img src="pistacho.png" alt="Pistacho">
-    <img src="dulce_de_leche_con_nuez.png" alt="Dulce de leche con nuez">
+    </nav>
+    <div> 
+        <h1 class="h1 text-center">Sabores destacados</h1>
+
+        <div class="container">
+
+        <div class="card" style="width: 20.5rem; max-height: 200%; margin-left: 10px;" >
+            <img src="chocolate.png" class="card-img-top" alt="Chocolate" style="height: 400px; object-fit: cover;">
+            <div class="card-body">
+              <h1 class="h1 card-title">Chocolate</h1>
+              <p class="p card-text">un sabor que combina la esencia del cacao con la suavidad del helado, siendo una elección atemporal para los amantes del dulce.</p>
+            </div>
+            <div class="card-body">
+        <button type="submit">Probar</button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 19rem; max-height: 500%; margin-left: 10px;">
+            <img src="Dulce_de_leche_copn_chocolate.png" class="card-img-top" alt="Dulcechocolate" style="height: 370px; object-fit: cover;">
+            <div class="card-body">
+              <h1 class="h1 card-title">Dulce de leche con chocolate</h1>
+              <p class="p card-text">Es una experiencia irresistible para quienes buscan un sabor dulce, profundo y perfectamente equilibrado entre lo cálido y lo intenso.</p>
+            </div>
+            <div class="card-body">
+        <button type="submit">Probar</button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; max-height: 200%; margin-left: 10px;">
+            <img src="dulce_de_leche_con_nuez.png" class="card-img-top" alt="Dulcedelechenuez" style="height: 380px; object-fit: cover;">
+            <div class="card-body">
+              <h1 class="h1 card-title">Dulce de leche con nuez</h1>
+              <p class="p card-text">Aporta una dulzura intensa y agrega un contraste sutil con su textura crocante.</p>
+            </div>
+            <div class="card-body">
+        <button type="submit">Probar</button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 19rem; max-height: 500%; margin-left: 10px;">
+            <img src="pistacho.png" class="card-img-top" alt="pistacho" style="height: 370px; object-fit: cover;">
+            <div class="card-body">
+              <h1 class="h1 card-title">Pistacho</h1>
+              <p class="p card-text">Verdadero placer para quienes aprecian sabores naturales y equilibrados, con una nota gourmet que lo convierte en una elección especial. </p>
+            </div>
+            <div class="card-body">
+        <button type="submit">Probar</button>
+            </div>
+          </div>
+    </div>
+    </div>
+    <div>
+        <h1 class="h1 text-center">Sabores destacados</h1>
+    </div>
 </div>
       <footer>
         <div class="social-icons">
