@@ -79,21 +79,18 @@ footer .social-icons a:hover {
 .h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
-  font-size: 48px;
-  color: #d884a5;
+  font-size: 200%;
+  color: #555555;
 }
 .h2 {
   font-family: 'Yellowtail', cursive;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 200%;
 }
 .p {
   font-family: 'Oswald', sans-serif;
   font-weight: 200;
-  font-size: 48px;
-  color: #d884a5;}
-  .nav-item a:hover{
-    background-color: #555555;
+  font-size: 150%;
 }
 nav.navbar {
     background-color: #F6EFE8 !important;

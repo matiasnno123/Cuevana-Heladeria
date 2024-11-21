@@ -10,22 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">    
     <style>  
-            .h1 {
+        body{
+            background-color: white;
+        }
+        .h1 {
             font-family: 'Oswald', sans-serif;
             font-weight: 600;
-            font-size: 48px;
-            color: #48044B;
+            font-size: 200%;
+            color: #555555;
         }
         .h2 {
             font-family: 'Yellowtail', cursive;
             font-weight: 400;
-            font-size: 48px;
+            font-size: 200%;
         }
         .p {
             font-family: 'Oswald', sans-serif;
             font-weight: 200;
-            font-size: 48px;
-            color: #d884a5;
+            font-size: 150%;
         }
         body {
                 display: flex;
@@ -46,11 +48,11 @@
       }
   
       .container h1 {
-        font-family: 'Yellowtail', cursive;
-            font-weight: 400;
-            font-size: 20px;
-          margin-bottom: 15px;
-          color: #48044B;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        font-size: 200%;
+        margin-bottom: 15px;
+        color: #48044B;
       }
       form{
     display: flex;
@@ -139,6 +141,64 @@ nav.navbar {
     color: #fff !important; 
     border-radius: 5px; 
 }
+
+  #form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  flex-direction: column;
+  position: absolute;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+.clasificacion label {
+    font-size: 20px;
+    color: grey;
+    cursor: pointer;
+}
+.clasificacion label {
+    font-size: 20px; 
+    color: grey;
+    cursor: pointer;
+}
+
+.clasificacion label:hover,
+.clasificacion label:hover ~ label {
+    color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+    color: orange;
+}
+
     </style>
 </head>
 <body>
@@ -160,7 +220,7 @@ nav.navbar {
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="promociones.html">Promociones</a>
@@ -174,34 +234,70 @@ nav.navbar {
             </div>
         </div>
     </nav>
-
-    <div class="container"> 
-        <h1 class="h1 text-center">CONTACTANOS</h1>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-    
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
-    
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-    
+    <div class="d-flex justify-content-center align-items-start">
+        <section class="me-3" style="width: 40%;">
+            <h1 class="h1" style="margin-top: 20px;">Trabaja con Nosotros:</h1>
+            <a href="#" class="p">Enviar CV</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="h1">Consejos para mejora</h1>
+            <textarea name="" id="" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;"></textarea>
             <button type="submit">Enviar</button>
-        </form>
-    </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="h1 text-align">Calificanos nuestra atención</h1>
+            <form>
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5">
+                  <label for="radio1">★</label>
+                  <input id="radio2" type="radio" name="estrellas" value="4">
+                  <label for="radio2">★</label>
+                  <input id="radio3" type="radio" name="estrellas" value="3">
+                  <label for="radio3">★</label>
+                  <input id="radio4" type="radio" name="estrellas" value="2">
+                  <label for="radio4">★</label>
+                  <input id="radio5" type="radio" name="estrellas" value="1">
+                  <label for="radio5">★</label>
+                </p>
+              </form><br>
+              <br>
+              <button type="submit">Enviar Calificación</button>
+        </section>
+
+        <div class="container" style="max-width: 400px; width: 100%; background-color: #f7c9dc; padding: 45px; border-radius: 15px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); margin-top: 35px;">
+            <h1 class="h1 text-center">CONTACTANOS</h1>
+            <form action="#" method="post" style="margin-top: 20px;">
+                <label for="nombre" style="font-size: 14px; color: #48044B;">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;">
     
+                <label for="apellido" style="font-size: 14px; color: #48044B;">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;">
+    
+                <label for="email" style="font-size: 14px; color: #48044B;">Correo:</label>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;">
+    
+                <label for="mensaje" style="font-size: 14px; color: #48044B;">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;"></textarea>
+    
+                <button type="submit" style="display: block; margin: 0 auto; padding: 10px 30px; background-color: #333; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 14px;">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </div>
     <div>
-        <h1 class="h1 text-center">Nuestros Locales</h1>
+        <h1 class="h1 text-center">Nuestras sucursales</h1>
         <div class="row">
             <div class="col-md-6 text-center">
-                <p class="p">Capital</p>
+                <p class="p">Santa Lucía</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3401.2249376104246!2d-68.50552074063454!3d-31.517981407164985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1732135973441!5m2!1ses-419!2sar" 
                         width="100%" 
                         height="200" 
@@ -212,7 +308,7 @@ nav.navbar {
                 </iframe>
             </div>
             <div class="col-md-6 text-center">
-                <p class="p">Santa Lucía</p>
+                <p class="p">Capital Concepcion</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2673.53272186993!2d-68.52396675024077!3d-31.523477690898147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1732136062408!5m2!1ses-419!2sar" 
                         width="100%" 
                         height="200" 
