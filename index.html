@@ -31,22 +31,26 @@
             font-size: 150%;
         }
         footer {
-            background-color: #000000;
-            color: #FFFFFF;
-            padding: 30px 0;
-            text-align: center;
-            font-family: 'Oswald', sans-serif;
-        }
-        footer .social-icons a {
-            color: #FFFFFF;
-            font-size: 40px;
-            margin: 0 20px;
-            transition: transform 0.3s, color 0.3s;
-        }
-        footer .social-icons a:hover {
-            transform: scale(1.2);
-            color: #48044b;
-        }
+        background-color: #000000;
+        color: #FFFFFF;
+        padding: 30px 0;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+    }
+    footer .social-icons a {
+        color: #FFFFFF;
+        font-size: 40px;
+        margin: 0 20px;
+        transition: transform 0.3s, color 0.3s;
+    }
+    footer .social-icons a:hover {
+        transform: scale(1.2);
+        color: #48044b;
+    }
+    footer p {
+        margin-top: 15px;
+        font-size: 14px;
+    }
         .carousel {
             max-width: 1500px;
             max-height: 550px;
@@ -68,43 +72,82 @@
             min-height: 80vh; 
             }
             nav .nav-link {
-    color: #000000 !important;
-    width: 200px;
-}
-.nav-item a:hover{
-    background-color: #555555;
-}
-nav.navbar {
-    background-color: #F6EFE8 !important;
-    padding: 1px;
-}
+            color: #000000 !important;
+            width: 200px;
+        }
+        .nav-item a:hover{
+            background-color: #555555;
+        }
+        nav.navbar {
+            background-color: #F6EFE8 !important;
+            padding: 1px;
+        }
 
-.navbar-nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
 
-.nav-item {
-    text-align: center;
-    width: 200px;
-}
+        .nav-item {
+            text-align: center;
+            width: 200px;
+        }
 
-.nav-item a {
-    display: block;
-    color: #000000 !important;
-    padding: 10px;
-    text-decoration: none;
-}
+        .nav-item a {
+            display: block;
+            color: #000000 !important;
+            padding: 10px;
+            text-decoration: none;
+        }
 
-.nav-item a:hover {
-    background-color: #555555;
-    color: #FFFFFF !important; 
-    border-radius: 5px; 
-}
-.container{
-    background-color: #FFFFFF;
-}
+        .nav-item a:hover {
+            background-color: #555555;
+            color: #FFFFFF !important; 
+            border-radius: 5px; 
+        }
+        .container{
+            background-color: #FFFFFF;
+        }
+
+
+      .flavor-card {
+            position: relative;
+            overflow: hidden;
+        }
+        .flavor-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .flavor-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); 
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            text-align: center;
+        }
+        .flavor-card:hover .flavor-overlay {
+            opacity: 1;
+        }
+        .flavor-overlay button {
+            margin-top: 10px;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }   
 
     </style>
 </head>
@@ -170,26 +213,80 @@ nav.navbar {
       <br>
         <div class="col-12">
             <h1 class="h1 text-center" style="color: #000000;">Somos Cuevana, una fabrica de helados artesanales</h1>
-            <h1 class="h1 text-center" style="color: #000000;">De origen Concepción, San Juan de prestigio empresarial cuyano.</h1>
+            <h1 class="h1 text-center" style="color: #000000;">de raices sanjuaninas, ubicados en el corazon cuyano.</h1>
         </div>
         <br>
         <br>
         <br>
         <img src="helados.png" alt="Heladofruta" width="100%" height="100%">
-                <br>
-                <br>
-                <br>
                 <div class="container" style="display: flex; align-items: center; justify-content: center; text-align: center; margin: 50px 0; background-color: #FFFFFF;">
-                    <img src="HeladoRosa.gif" alt="" style="width: 15%; height: auto; margin-right: 20px;">
-                    <p class="p" style="font-size: 28px; line-height: 1.5;">
-                        Hace 10 años Cuevana viene haciendo realidad tus sueños con nuestros sabores y 
-                        compartiendo con ustedes estos hermosos momentos de felicidad.
-                    </p>
-                </div>                              
+                    <img src="HeladoRosa.gif" alt="" style="width: 28%; height: auto; margin-left: 150px;">
+                    <div style="display: block; text-align: center; margin-left: 20px;">
+                        <p class="p" style="font-size: 25px; line-height: 1.5;">Hace 10 años Cuevana</p>
+                        <p class="p" style="font-size: 25px; line-height: 1.5;">viene haciendo realidad</p>
+                        <p class="p" style="font-size: 25px; line-height: 1.5;">tus sueños con nuestros</p>
+                        <p class="p" style="font-size: 25px; line-height: 1.5;">sabores y compartiendo</p>
+                        <p class="p" style="font-size: 25px; line-height: 1.5;">con ustedes estos</p>
+                        <p class="p" style="font-size: 25px; line-height: 1.5;">hermosos momentos de</p>
+                        <p class="p" style="font-size: 25px; line-height: 1.5;">felicidad.</p>
+                    </div>
+                </div>                           
+                <div class="container text-center py-5" style="background-image: url(FONDO.png);">
+                    <h1 class="mb-4">¡Sabores Estrellas!</h1>
+                    <div class="row g-3">
+
+                        
+                        <div class="col-md-3 col-sm-6">
+                            <div class="flavor-card">
+                                <img src="chocolate.png" alt="Helado 1">
+                                <div class="flavor-overlay">
+                                    <h4>CHOCOLATE</h4>
+                                    <p>Delicioso helado de chocolate con topping de chispas.</p>
+                                    <button>¡Quiero!</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-3 col-sm-6">
+                            <div class="flavor-card">
+                                <img src="Dulce_de_leche_copn_chocolate.png" alt="Helado 2">
+                                <div class="flavor-overlay">
+                                    <h4>DULCE DE LECHE CON CHOCOLATE</h4>
+                                    <p>Helado hecho de dulce de leche con mezcla de chips de chocolate</p>
+                                    <button>¡Quiero!</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-3 col-sm-6">
+                            <div class="flavor-card">
+                                <img src="dulce_de_leche_con_nuez.png" alt="Helado 3">
+                                <div class="flavor-overlay">
+                                    <h4>DULCE DE LECHE CON NUEZ</h4>
+                                    <p>Helado dulce de leche con trozos de nuez.</p>
+                                    <button>¡Quiero!</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-3 col-sm-6">
+                            <div class="flavor-card">
+                                <img src="pistacho.png" alt="Helado 4">
+                                <div class="flavor-overlay">
+                                    <h4>PISTACHO</h4>
+                                    <p>Un sabor fresco con trozos de pistacho natural.</p>
+                                    <button>¡Quiero!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <br>
                 <br>
-           
-            <div class="container"> 
+            <div class="container" style="background-color: #F1CBE3;"> 
                 <h1 class="h1 text-center" style="color: #48044b;">Nuestros Locales</h1>
                 <div class="row">
                     <div class="col-md-6 text-center">
@@ -213,25 +310,40 @@ nav.navbar {
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
+                        <br>
+                        <br>
                     </div>
                 </div>
             </div>
         </div>
+        <footer style="background-color: #000000; padding: 20px; display: flex; align-items: center; justify-content: space-between; color: #FFFFFF; font-family: 'Oswald', sans-serif;">
 
-    <footer>
-        <div class="social-icons">
-            <a href="#" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </div>
-        <p class="footer text-align">© 2024 Cuevana. Todos los derechos reservados.</p>
-    </footer>
+
+            <div style="flex: 1; display: flex; align-items: center;">
+               <a href="index.html"> <img src="Cuevana.png" alt="Logo Cuevana" style="height: 60px; margin-left: 20px;"></a>
+            </div>
+            
+
+            <div style="flex: 2; text-align: center;">
+                <p style="margin: 0;">© 2024 Cuevana. Todos los derechos reservados.</p>
+            </div>
+     
+
+            <div style="flex: 1;"></div>
+            <div class="social-icons">
+
+                
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html
